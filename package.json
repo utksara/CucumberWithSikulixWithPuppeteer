@@ -1,0 +1,14 @@
+{
+  "name": "aw_test1",
+  "version": "1.0.0",
+  "description": "Acceptance test 1 for AW written using JS ans sikulix ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^2.0.0"
+  }
+}
