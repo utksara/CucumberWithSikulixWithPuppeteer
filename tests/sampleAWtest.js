@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer');
 var imagePath1 = "C:\\Users\\vqmmx3\\Pictures\\vlp_vise";
 var imagePath2 = "C:\\Users\\vqmmx3\\Pictures\\windowsIcon";
 var accuracy = 0.99;
-var region = new Region(0,0,1680,1050);
+var region = new Region(0,0,1920,1080);
 
 (async () => {
     function execute(callback){
@@ -20,7 +20,7 @@ var region = new Region(0,0,1680,1050);
 
     const page = await browser.newPage();
 
-    var awURL = "http://10.134.153.95:3000/";
+    var awURL = "http://10.134.64.34:3000";
 
     var usernameBox = 'input[ng-model="userName"]';
     var passwordBox = 'input[ng-model="password"]';
@@ -36,7 +36,7 @@ var region = new Region(0,0,1680,1050);
 
     // fetch URL
     await page.goto(awURL);
-    await page.setViewport({ width: 1680, height: 1050});
+    await page.setViewport({ width: 1920, height: 1080});
 
     //enter username
     await page.waitFor(usernameBox);
