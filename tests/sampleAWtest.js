@@ -33,10 +33,11 @@ var region = new Region(0,0,1920,1080);
     var userID = 'bartolom';
     var password = 'pw_bartolom';
     var data = 'vlp_vise';
+    var imageSearchResultIcon = 'span[vlp_wise]';
 
     // fetch URL
     await page.goto(awURL);
-    await page.setViewport({ width: 1920, height: 1080});
+    await page.setViewport({ width: 1680, height: 1050});
 
     //enter username
     await page.waitFor(usernameBox);
@@ -59,7 +60,8 @@ var region = new Region(0,0,1920,1080);
 
     await page.waitFor(searchButton);
     await page.click(searchButton);
-
+    
+    await page.click(imageSearchResultIcon);
     await page.waitFor(imageCanvas);
 
     execute( function() {
@@ -68,4 +70,5 @@ var region = new Region(0,0,1920,1080);
     });
     
     console.log("Hello from sampleTest1.js");
+    
     })();

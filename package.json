@@ -9,6 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^2.0.0"
+    "assert": "^2.0.0",
+    "puppeteer": "^2.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "cucumber": "^6.0.5"
   }
 }
